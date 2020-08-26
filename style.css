@@ -1,0 +1,102 @@
+* {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+    margin: 20px;
+    background-image: url("./party.png");
+    text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: #f81d83;
+}
+
+h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+p, li {
+  font-size: 20px;
+}
+
+a {
+  color: #9efce0;
+  background-color: #f81d83;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #9c57d4;
+  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+
+li {
+    text-align: left;
+}
+
+section {
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 10px 70px;
+}
+
+.invitation, .joining, .recipe, .icing{
+  width: 80%;
+}
+
+.invitation, .invitation > p{
+  background-color: #05d8bc;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.joining {
+  background-color: #fab5d5;
+  color: #fffc65;
+}
+
+.recipe {
+  background-color: #9c57d4;
+  color: #9efce0;
+}
+.ingredients, .tools {
+  width: 35%;
+  background-color: #05d8bc;
+  color: #ffffff;
+}
+
+.icing {
+  background-color: #f0327b;
+  color: #c5b1f5;
+}
+
+.ice-ingredients {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ice-directions {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+
+
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
