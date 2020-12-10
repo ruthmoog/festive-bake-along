@@ -4,8 +4,8 @@
 
 @media only screen and (max-width: 480px) and (min-width: 20px) {
   section {
-    background-color: #fab5d5;
-    color: #fffc65;
+    background-color: #104e8b;
+    color: #990F02;
     padding: 10px !important;
     display: inline-block;
     width: 95% !important;
@@ -15,13 +15,13 @@
 
 body {
     margin: 20px;
-    background-image: url("./party.png");
+    background-image: url("./bg.jpeg");
     text-align: center;
 }
 
 h1 {
   font-size: 60px;
-  color: #f81d83;
+  color: #fffff;
 }
 
 h2 {
@@ -29,24 +29,32 @@ h2 {
   color: #ffffff;
 }
 
+h3 {
+font-size: 30px;
+  color: #eeffff;
+}
+
 p, li {
   font-size: 20px;
 }
 
 a {
-  color: #9efce0;
-  background-color: #f81d83;
+  color: #104e8b;
+  background-color: #eeffff;
   text-decoration: none;
 }
 
 a:hover {
   color: #ffffff;
-  background-color: #9c57d4;
+  background-color: #104e8b;
   text-decoration: none;
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }
 
+span {
+    font-size: 9em;
+}
 
 li {
     text-align: left;
@@ -58,51 +66,20 @@ section {
   padding: 10px 70px;
 }
 
-.invitation, .joining, .recipe, .icing {
+.invitation, .joining, .recipe {
   width: 80%;
 }
 
 .invitation, .invitation > p{
-  background-color: #05d8bc;
+  background-color: #cc0000;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-.joining {
-  background-color: #fab5d5;
-  color: #fffc65;
-}
-
-.recipe {
-  background-color: #9c57d4;
-  color: #9efce0;
-}
-.ingredients, .tools {
-  width: 35%;
-  background-color: #05d8bc;
+.joining, .recipe {
+  background-color: #cc0000;
   color: #ffffff;
 }
-
-.icing {
-  background-color: #f0327b;
-  color: #c5b1f5;
-}
-
-.ice-ingredients {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.ice-directions {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
-
-
-}
-
-
 
 body {
   display: flex;

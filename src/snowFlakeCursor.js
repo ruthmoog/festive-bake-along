@@ -1,5 +1,5 @@
 
-function fairyDustCursor(options) {
+function snowFlakeCursor(options) {
   let possibleColors = (options && options.colors) || [
     "#D61C59",
     "#E7D84B",
@@ -15,7 +15,7 @@ function fairyDustCursor(options) {
   let canvas, context;
 
   let canvImages = [];
-  const char = "•";
+  const char = "❄";
 
   function init() {
     
@@ -37,7 +37,7 @@ function fairyDustCursor(options) {
       canvas.height = height;
     }
 
-    context.font = "21px serif";
+    context.font = "40px serif";
     context.textBaseline = "middle";
     context.textAlign = "center";
 
@@ -53,7 +53,7 @@ function fairyDustCursor(options) {
 
       bgContext.fillStyle = color;
       bgContext.textAlign = "center";
-      bgContext.font = "21px serif";
+      bgContext.font = "40px serif";
       bgContext.textBaseline = "middle";
       bgContext.fillText(
         char,
@@ -95,7 +95,8 @@ function fairyDustCursor(options) {
         addParticle(
           e.touches[i].clientX,
           e.touches[i].clientY,
-          canvImages[Math.floor(Math.random() * canvImages.length)]
+//          canvImages[Math.floor(Math.random() * canvImages.length)]
+          canvImages[1 * canvImages.length]
         );
       }
     }
@@ -148,8 +149,8 @@ function fairyDustCursor(options) {
     this.initialLifeSpan = lifeSpan; //
     this.lifeSpan = lifeSpan; //ms
     this.velocity = {
-      x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
-      y: Math.random() * 0.7 + 0.9,
+      x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 4),
+      y: Math.random() * 3,
     };
     this.position = { x: x, y: y };
     this.canv = canvasItem;
@@ -159,14 +160,14 @@ function fairyDustCursor(options) {
       this.position.y += this.velocity.y;
       this.lifeSpan--;
 
-      this.velocity.y += 0.02;
+      this.velocity.y += 0.00001;
 
       const scale = Math.max(this.lifeSpan / this.initialLifeSpan, 0);
 
       context.drawImage(
         this.canv,
-        this.position.x - (this.canv.width / 2) * scale,
-        this.position.y - this.canv.height / 2,
+        this.position.x - (this.canv.width / 4) * scale,
+        this.position.y - this.canv.height / 4,
         this.canv.width * scale,
         this.canv.height * scale
       );
